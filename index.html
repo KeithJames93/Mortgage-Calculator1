@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mortgage Calculator</title>
+    <title>Mortgage Calculator (USD)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,20 +12,20 @@
     <h1>Mortgage Calculator</h1>
 
     <form id="mortgageForm" aria-label="Mortgage Calculator Form">
-        
+
         <div class="form-group">
-            <label for="loanAmount">Loan Amount (£)</label>
-            <input type="number" id="loanAmount" required min="1">
+            <label for="loanAmount">Loan Amount ($)</label>
+            <input type="number" id="loanAmount" required min="1" placeholder="e.g. 300000">
         </div>
 
         <div class="form-group">
             <label for="interestRate">Interest Rate (%)</label>
-            <input type="number" id="interestRate" required step="0.01" min="0">
+            <input type="number" id="interestRate" required step="0.01" min="0" placeholder="e.g. 5.5">
         </div>
 
         <div class="form-group">
             <label for="loanTerm">Loan Term (Years)</label>
-            <input type="number" id="loanTerm" required min="1">
+            <input type="number" id="loanTerm" required min="1" placeholder="e.g. 30">
         </div>
 
         <button type="submit">Calculate</button>
@@ -33,13 +33,7 @@
 
     <section id="results" aria-live="polite">
         <h2>Results</h2>
-        <p>Monthly Payment: <span id="monthlyPayment">£0.00</span></p>
-        <p>Total Payment: <span id="totalPayment">£0.00</span></p>
-        <p>Total Interest: <span id="totalInterest">£0.00</span></p>
-    </section>
+        <p>Monthly Payment: <span id="monthlyPayment">$0.00</span></p>
+        <p>Total Payment: <span id="totalPayment">$0.00</span></p>
+        <p>Total Interest: <span id="totalInterest"
 
-</main>
-
-<script src="script.js"></script>
-</body>
-</html>
