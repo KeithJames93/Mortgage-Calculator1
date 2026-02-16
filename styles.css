@@ -8,14 +8,15 @@ body {
 .container {
     max-width: 500px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 25px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 h1, h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .form-group {
@@ -24,24 +25,33 @@ h1, h2 {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    font-weight: bold;
 }
 
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0078D4;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     background-color: #0078D4;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -49,12 +59,21 @@ button:hover {
 }
 
 #results {
-    margin-top: 20px;
+    margin-top: 25px;
+    background: #f9fbfd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#results p {
+    font-size: 18px;
+    margin: 8px 0;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
     .container {
         margin: 20px;
+        padding: 20px;
     }
 }
